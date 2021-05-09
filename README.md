@@ -21,5 +21,5 @@ console.log(containers.exitCode)
 - Mount `example.mjs` path and run:
 
 ```bash
-# docker container run -v "$(pwd):/code" erkrnt/zx:1.2.3 /code/example.mjs
+docker container run -v "$(pwd):/code" erkrnt/zx:1.2.3 /code/example.mjs
 ```
