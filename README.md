@@ -13,7 +13,7 @@ This container uses [google/zx](https://github.com/google/zx) as an `entrypoint`
 
 process.env.FOO = "world"
 
-let containers = await $`echo Hello, $FOO!`
+let containers = await $`echo Hello, ${process.env.FOO}!`
 
 console.log(containers.exitCode)
 ```
